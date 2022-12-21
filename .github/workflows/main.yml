@@ -34,15 +34,6 @@ jobs:
         # запуск проверки проекта по flake8
         python -m flake8
 
-name: Django-app workflow
-
-on: [push]
-
-jobs:
-  tests:
-    runs-on: ubuntu-latest
-
-    steps:
     - uses: actions/checkout@v2
     - name: Set up Python 
       uses: actions/setup-python@v2
